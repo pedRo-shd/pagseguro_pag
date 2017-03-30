@@ -5,6 +5,7 @@ class OrderController < ApplicationController
   def new
     @product = Product.find(params[:product_id])
     @session_id = (PagSeguro::Session.create).id
+    p PagSeguro::Session.create
   end
 
   # Enviar nosso pagamento para o Pagseguro

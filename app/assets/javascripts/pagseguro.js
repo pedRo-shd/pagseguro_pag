@@ -41,7 +41,6 @@ $( document ).ready(function() {
   });
 })
 
-
 function card_flag()
 {
   PagSeguroDirectPayment.getBrand({
